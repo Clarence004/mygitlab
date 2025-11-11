@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index — My Project</title>
+  <style>
+    :root{font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111}
+    body{display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;padding:2rem;background:#f6f8fa}
+    main{max-width:720px;background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+    h1{margin:0 0 .5rem}
+    p{margin:.25rem 0;color:#334155}
+    pre{background:#0f1724;color:#e6edf3;padding:1rem;border-radius:8px;overflow:auto}
+    footer{margin-top:1.25rem;color:#64748b;font-size:.9rem}
+    .meta{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .badge{background:#eef2ff;color:#3730a3;padding:.25rem .5rem;border-radius:999px;font-weight:600}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Welcome</h1>
+    <p>This is a starter <code>index.html</code> for your project.</p>
+    <div class="meta">
+      <div class="badge">HTML</div>
+      <div class="badge">Static</div>
+    </div>
+
+    <section style="margin-top:1rem">
+      <h2>Quick test</h2>
+      <p>Open this file in your browser or start a simple static server to preview it.</p>
+      <pre id="info">Loading...</pre>
+    </section>
+
+    <footer>
+      Tip: Use <code>python -m http.server 8000</code> (or your preferred dev server) to serve files locally.
+    </footer>
+  </main>
+
+  <script>
+    // Small runtime info for quick verification
+    (function(){
+      const el = document.getElementById('info');
+      const now = new Date();
+      el.textContent = `File: index.html\nCreated: ${now.toLocaleString()}\nStatus: Ready`;
+    })();
+  </script>
+</body>
+</html>
