@@ -1,0 +1,99 @@
+/* Global Styles */
+:root {
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  background: #f6f8fa;
+}
+
+/* Main Content Container */
+main {
+  max-width: 720px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0;
+  color: #334155;
+}
+
+code {
+  background: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+pre {
+  background: #0f1724;
+  color: #e6edf3;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 1.25rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Meta badges */
+.meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.badge {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Sections */
+section {
+  margin-top: 1rem;
+}
+
+section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
